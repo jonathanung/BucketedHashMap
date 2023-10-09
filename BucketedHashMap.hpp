@@ -14,8 +14,8 @@ template <class K, class V>
  */
 class BucketedHashMap {
     private: 
-        int size;
-        int capacity;
+        size_t size;
+        size_t capacity;
         double loadFactorThreshold;
         std::vector<KVList<K, V>> table;
 

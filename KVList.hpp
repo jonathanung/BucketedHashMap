@@ -13,6 +13,10 @@ template <class K, class V>
  * @param *head
  */
 class KVList {
+    private:
+        size_t size;
+        MapNode<K, V> *head;
+
     public:
         KVList(); 
         KVList(const KVList &); 
@@ -48,10 +52,6 @@ class KVList {
         friend bool operator==(const KVList<T,U>&, const KVList<T,U>&); 
         template <class T, class U>
         friend bool operator!=(const KVList<T,U>&, const KVList<T,U>&); 
-
-    private:
-        int size;
-        MapNode<K, V> *head;
 };
 
 template <class K, class V>
